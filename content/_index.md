@@ -4,7 +4,7 @@ title: ""
 
 <div class="container">
     <h1>Welcome to</h1>
-    <h2>the AMTES Blog</h2>
+    <h2>The AMTES Blog</h2>
 </div>
 
 Explore the latest updates, research, and projects from the Mechatronics Engineering Department at FUNAAB. Stay informed and engaged with our community.

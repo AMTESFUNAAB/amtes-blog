@@ -15,7 +15,15 @@ smartTOCHideUnfocusedChildren = true
 replyByEmail = false
 
 [author]
+  name = "AMTES FUNAAB"
+  image = ""
   email = "amtesfunaab+blog@gmail.com"
+  headline = "Engineers | Researchers"
+  bio = "Home to Keyboard Warriors"
+  links = [
+    { x-twitter = "https://twitter.com/AMTES_FUNAAB" },
+    { github = "https://github.com/AMTESFUNAAB"},
+  ]
 
 [header]
   layout = "custom" # basic, fixed, fixed-fill-blur

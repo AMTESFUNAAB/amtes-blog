@@ -1,5 +1,5 @@
 theme = "blowfish"
-title = "AMTES Blog"
+title = "The AMTES Blog"
 baseURL = "https://amtes.pages.dev"
 defaultContentLanguage = "en"
 timeout = "500s"
@@ -25,17 +25,6 @@ enableGitInfo = false
 
 [frontmatter]
   lastmod = ['lastmod', ':fileModTime']
-
-[author]
-  name = "AMTES FUNAAB"
-  image = ""
-  headline = "Engineers | Researchers"
-  bio = "An Awesome Place to be"
-  links = [
-    { x-twitter = "https://twitter.com/AMTES_FUNAAB" },
-    { github = "https://github.com/AMTESFUNAAB"},
-  ]
-
 
 [imaging]
   anchor = 'Center'
