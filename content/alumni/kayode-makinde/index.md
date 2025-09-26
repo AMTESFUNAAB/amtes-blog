@@ -136,7 +136,7 @@ All these are just for the introduction. Please note that no matter how rich the
 So yes, I would suggest learning Python, the basics of machine learning, and learning through building by participating in hackathons and maybe through machine learning research.
 
 The final thing I’d love to add is being part of a community. Try to find a community that supports your goals. These are some examples on campus:
--[GDG FUNAAB](http://gdsc.community.dev/federal-university-of-agriculture-abeokuta/),
+- [GDG FUNAAB](http://gdsc.community.dev/federal-university-of-agriculture-abeokuta/),
 - [DSN FUNAAB](https://forms.gle/8o6mAyQ5SRcAfBTW7).
 
 There are also other communities like
