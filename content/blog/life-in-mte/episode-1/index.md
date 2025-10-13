@@ -4,10 +4,9 @@ date: 2025-09-25
 authors:
   - "daniel"
 draft: false
-summary: "We will be getting a glimpse into the personal journey of various student in the department and how this journey is shaping them.
-Get ready to be inspired by their stories and gain a deeper understanding of what creates fascinating students in the world of mechatronics. Let’s dive in."
+summary: "What reason? What could justify the means? The fact that Veterinary medicine increased their levy? The story was shady..."
 tags: [""]
-header: false
+header: true
 enableComments: true
 layout: centered
 cover:

@@ -2,8 +2,10 @@
 title: "Life of a Mechatronics Engineering student"
 date: "2025-10-10T09:05:31+01:00"
 summary: "craziness in it's peak"
-showDateUpdated: true
-draft: false
+showHero: false
+cardView: true
+cascade:
+  showAuthorBottom: true
 ---
 
 {{< lead >}}

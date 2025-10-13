@@ -7,7 +7,7 @@ draft: false
 summary: "We will be getting a glimpse into the personal journey of various student in the department that led them to choose Mechatronics Engineering and their perspectives as they navigate their academic path.
 Get ready to be inspired by their stories and gain a deeper understanding of what draws students to the fascinating world of mechatronics. Let’s dive in."
 tags: ["StudentStories"]
-header: false
+header: true
 draft: false
 enableComments: true
 layout: centered
