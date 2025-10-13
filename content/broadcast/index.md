@@ -4,6 +4,7 @@ date: "2024-10-25T17:17:18+01:00"
 showDate: false
 showDateUpdated: true
 layout: centered
+header: false
 ---
 
 {{< fullwidth src="hero.jpg" alt="Lurking Minions" width="1920" height="768" >}}
