@@ -1,9 +1,9 @@
 ---
-title: "MEET THE BLOGGERS"
+date: '2024-10-25T17:05:01+01:00'
+header: false
 cascade:
   showDate: false
   showReadingTime: false
-header: false
 ---
 
 <h1 class="responsive-title-style-2">Meet.<br>The.<br>Bloggers!</h1>

@@ -115,6 +115,7 @@ body {
   text-align: left;
   font-weight: bold;
   margin: 0;
+  padding-top: 30px;
   transform: rotate(-6deg);
 }
 
@@ -136,6 +137,7 @@ body {
   font-size: 5.25rem; /* Default size for desktop */
   font-weight: bold;
   margin: 0;
+  padding-top: 30px;
 }
 
 /* Media Queries for Responsiveness */

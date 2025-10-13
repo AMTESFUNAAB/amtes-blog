@@ -5,7 +5,8 @@ header: false
 ---
 
 <h1 class="responsive-title-style-2">
-  ✍️ Blogosphere<br>[blaw-guh-sfeer]<em>noun</em> 
+  ✍️ Blogosphere<br>
+  [blaw-guh-sfeer]<br>
 </h1>
 
 {{< lead >}}
