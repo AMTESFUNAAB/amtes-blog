@@ -14,3 +14,5 @@ Just thinking about the life of the engineers(seniors) we all admire in MTE. Oh 
 
 How cool or how not cool is a mechatronics engineer. Final projects from them are always very cool.
 Laugh or cry with me as we look into this. In this series, we'll be looking through the life of a mechatronics engineering student.
+
+---

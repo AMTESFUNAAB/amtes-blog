@@ -4,7 +4,7 @@ date: 2025-09-25
 authors:
   - "sekeenah"
 draft: false
-summary: "I’ve had an interest since I was in primary school. I watched a lot of cartoons like My Life as a Teenage Robot and Jimmy Neutron, among others. I was fascinated [...]"
+summary: "I’ve had an interest since I was in primary school. I watched a lot of cartoons like My Life as a Teenage Robot and Jimmy Neutron, among others. I was fascinated..."
 tags: [""]
 header: true
 enableComments: true
@@ -19,6 +19,8 @@ cover:
 *We will be getting a glimpse into the personal journey of various student in the department that led them to choose Mechatronics Engineering and their perspectives as they navigate their academic path.*
 
 *Get ready to be inspired by their stories and gain a deeper understanding of what draws students to the fascinating world of mechatronics. Let’s dive in.*
+
+---
 
 ## Toyibat ‘26
 
@@ -49,6 +51,8 @@ I also chose Mechatronics because it's broad. I could easily choose to specializ
 **Sekeenah:** Nice to see you are enjoying your choice. Any additional information you are willing to add?
 
 **Toyibat:** If you're considering studying Engineering or specifically, Mechatronics. Do it!
+
+---
 
 ## Daniel ‘28
 
@@ -98,6 +102,8 @@ Nevertheless, I look forward to taking MTE courses from 300 level and above, goi
 
 **Sekeenah:** You are welcome, and it was nice talking to you.
 
+---
+
 ## Olajire ‘28
 
 *In the interview with Olajire, we got to know of her childhood interest in Robotics that came from watching cartoons that broadened her mind. We also got to see how Mechatronics showed up on her feed in her search for robotics school in the country.*
@@ -125,6 +131,8 @@ I watched a lot of cartoons like My Life as a Teenage Robot and Jimmy Neutron, a
 **Olajire:** Thank you for the interview.
 
 **Sekeenah:** You're welcome. I hope your experience over time is somewhat what you expect.
+
+---
 
 ## Hafsoh ‘29
 
