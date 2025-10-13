@@ -12,6 +12,8 @@ layout: centered
 cover:
   src: "episode_one.png"
   alt: "Episode 1"
+  height: "1080"
+  width: "1920"
 ---
 
 **A true life story...**
