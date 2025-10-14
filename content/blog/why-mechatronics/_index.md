@@ -8,6 +8,6 @@ cascade:
   showAuthorBottom: true
 ---
 
-Share your journey with us [via email](mailto:amtesfunaab+blog@gmail.com) 📬 or [schedule a meeting](https://calendly.com/amtesfunaab).
+<a href="#tally-open=wa8No9&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave">Share your journey</a> with us or [schedule a meeting](https://calendly.com/amtesfunaab).
 
 ---
