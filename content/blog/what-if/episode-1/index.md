@@ -8,18 +8,13 @@ header: true
 enableComments: true
 layout: centered
 draft: false
-cover:
-  src: "episode 1.jpeg"
-  alt: "Episode 1"
-  height: "1080"
-  width: "1920"
 ---
-
-## The Little High You Get From Feeling Seen
 
 <span style="font-size: 2em;">M</span>*irror.* Have you ever liked a post and watched the number tick up *just because of you*?  
 That tiny “+1” might not mean much to anyone else, but in that split second, it’s personal.  
-You did that. You left a mark. <p>![alt text](<episode 1.jpeg>)
+You did that. You left a mark.
+
+![alt text](<episode 1.jpeg>)
 
 But when the number says **“5.5k likes”**, it’s different. Your reaction disappears into the crowd. You can’t *see* yourself in it. It’s no longer personal, it’s just… *meh*, a number.  
 
