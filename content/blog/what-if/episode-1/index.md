@@ -1,7 +1,8 @@
 ---
 title: "The Little High You Get From Feeling Seen"
 date: 2025-11-10
-author: "togba"
+authors:
+  - "togba"
 summary: "Exploring why a simple +1, like, increase can trigger satisfaction and motivation — and what this reveals about human psychology in the digital age."
 header: true
 enableComments: true
