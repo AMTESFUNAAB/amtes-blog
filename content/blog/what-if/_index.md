@@ -11,3 +11,5 @@ What if innovation were not confined by the limitations of current technology, b
 {{< /lead >}}
 
 In this blog series, we explore the provocative realm of "what if"—a space where established projects serve as springboards for alternative approaches and imaginative breakthroughs. Read on as we question the status quo, consider new ideas and modifications to existing technologies, and maybe sprinkle some craziness here and there.
+
+---
