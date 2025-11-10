@@ -1,10 +1,8 @@
 ---
 title: "The Little High You Get From Feeling Seen"
 date: 2025-11-10
-author: "Togba Ilori"
-description: "Exploring why a simple +1, like, increase can trigger satisfaction and motivation — and what this reveals about human psychology in the digital age."
-tags: ["Psychology", "Social Media", "Behavioral Science", "User Experience"]
-categories: ["Human Behavior", "Digital Psychology"]
+author: "togba"
+summary: "Exploring why a simple +1, like, increase can trigger satisfaction and motivation — and what this reveals about human psychology in the digital age."
 header: true
 enableComments: true
 layout: centered
@@ -15,7 +13,8 @@ cover:
   height: "1080"
   width: "1920"
 ---
-# **The Little High You Get From Feeling Seen** 
+
+## The Little High You Get From Feeling Seen
 
 <span style="font-size: 2em;">M</span>*irror.* Have you ever liked a post and watched the number tick up *just because of you*?  
 That tiny “+1” might not mean much to anyone else, but in that split second, it’s personal.  
