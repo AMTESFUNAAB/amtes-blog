@@ -1,6 +1,8 @@
 ---
 title: "🎙️ [Ep 2] Why Mechatronics?"
 date: 2025-11-10
+authors:
+  - "abdul-hameed"
 draft: false
 summary: "*you do JAMB, and if you get into Mechatronics engineering, we'll see.*"
 enableComments: true
