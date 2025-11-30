@@ -19,9 +19,9 @@ I would say I had planned out most of what my life post-high school would be lik
 
 I just completed a six-month-long internship at one of the biggest multinational oil and gas companies in the world. Here’s my story, but  before we go too deep into it, you should hold on to these very important points:
 
-Sometimes when things don’t turn out the way we want, it’s not because of incapabilities, but more about what life has in store for us.
-The grace of God is real, and it has a super-powerful influence on all we do.
-It’s what you believe in the most that you’re able to manifest with ease.
+- Sometimes when things don’t turn out the way we want, it’s not because of incapabilities, but more about what life has in store for us.
+- The grace of God is real, and it has a super-powerful influence on all we do.
+- It’s what you believe in the most that you’re able to manifest with ease.
 
 You’d understand how these apply where necessary.
 
