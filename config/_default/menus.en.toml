@@ -48,16 +48,22 @@
   weight = 32
 
 [[main]]
+  name = "Internships"
+  parent = "Community"
+  pageRef = "internships"
+  weight = 33
+
+[[main]]
   name = "Careers & Alumni"
   parent = "Community"
   pageRef = "alumni"
-  weight = 33
+  weight = 34
 
 [[main]]
   name = "Academia & Research"
   parent = "Community"
   pageRef = "papers"
-  weight = 34
+  weight = 35
 
 [[main]]
   name = "Explore"
