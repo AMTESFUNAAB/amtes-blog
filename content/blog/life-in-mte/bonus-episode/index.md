@@ -4,13 +4,13 @@ date: 2025-12-15
 authors:
   - "daniel"
 draft: false
-summary: "What reason? What could justify the means? The fact that Veterinary medicine increased their levy? The story was shady..."
+summary: "Tests before bells, exams after cheers. Jingle..."
 tags: [""]
 header: true
 enableComments: true
 layout: centered
 cover:
-  src: ""
+  src: "episode_bonus.png"
   alt: "Episode Bonus"
   height: "1080"
   width: "1920"
