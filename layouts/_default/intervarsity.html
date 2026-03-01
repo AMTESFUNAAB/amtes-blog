@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechatronics Inter-Varsity Competition 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1946838873339736064/O6SMz52N_400x400.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- CSS VARIABLES (THEMING) --- */
+        :root {
+            /* Common Brand Colors */
+            --primary-blue: #0040ff;
+            --secondary-blue: #00c3ff;
+            --gradient-blue: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            --accent-glow: rgba(0, 195, 255, 0.5);
+
+            /* LIGHT MODE DEFAULTS */
+            --bg-body: #f0f4f8;
+            --bg-card: #ffffff;
+            --bg-accordion: #ffffff;
+            --bg-accordion-hover: #f8f9fa;
+            --text-main: #0a0a2a;
+            --text-secondary: #555555;
+            --border-color: #e0e0e0;
+            --shadow: 0 5px 20px rgba(0,0,0,0.05);
+            --circuit-opacity: 0.05;
+        }
+
+        /* DARK MODE OVERRIDES */
+        [data-theme="dark"] {
+            --bg-body: #050510; /* Deepest Navy/Black */
+            --bg-card: #0f0f25; /* Lighter Navy for cards */
+            --bg-accordion: #0f0f25;
+            --bg-accordion-hover: #1a1a3a;
+            --text-main: #ffffff;
+            --text-secondary: #aaaaaa;
+            --border-color: #2a2a50;
+            --shadow: 0 5px 20px rgba(0,0,0,0.5);
+            --circuit-opacity: 0.1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        /* Circuit Board Background Pattern */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+            opacity: var(--circuit-opacity);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        h1, h2, h3, .flyer-text { font-family: 'Orbitron', sans-serif; text-transform: uppercase; }
+        a { text-decoration: none; }
+        ul { list-style: none; }
+        section { padding: 80px 10%; position: relative; }
+
+        /* --- THEME TOGGLE SWITCH --- */
+        .theme-switch-wrapper {
+            position: fixed;
+            top: 12.5px;
+            right: 5%;
+            z-index: 1001; /* Above nav */
+            display: flex;
+            align-items: center;
+        }
+        .fas{
+            font-size: 32px;
+        }
+        .theme-toggle {
+            width: 75px;
+            height: 75px;
+            background: var(--bg-card);
+            border: 2px solid var(--primary-blue);
+            color: var(--text-main);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 0 15px rgba(0, 195, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .theme-toggle:hover { transform: rotate(15deg) scale(1.1); }
+
+        /* --- UTILITY CLASSES --- */
+        .gradient-text {
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+        }
+        .btn-primary {
+            background: var(--gradient-blue);
+            color: white; /* Always white text on button */
+            box-shadow: 0 10px 25px -5px var(--accent-glow);
+            border: none;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -5px var(--accent-glow);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            color: var(--text-main);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-blue);
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-anim { animation: float 4s ease-in-out infinite; }
+
+        .hidden { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .show { opacity: 1; transform: translateY(0); }
+
+        /* --- HEADER & NAV --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+        .logos { display: flex; gap: 20px; align-items: center; }
+        .logos img { height: 60px; background: rgba(255,255,255,0.1); border-radius: 50%; }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            min-height: calc(100vh-65px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content { max-width: 900px; z-index: 2; }
+        .amtes-title {
+            font-family: 'Orbitron';
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+        .main-title {
+            font-size: 5rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .hero-tagline {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-group { display: flex; gap: 20px; justify-content: center; margin-bottom: 50px; }
+
+        /* Decorative Elements */
+        .hero-robot-hand {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        .rocket {
+            position: absolute;
+            width: 100px;
+            z-index: 0;
+            opacity: 0;
+        }
+        .rocket-left { bottom: 50px; left: 5%; transform: rotate(45deg); }
+        .rocket-right { bottom: 50px; right: 5%; transform: rotate(-45deg); }
+        .anticipate-text {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 15px;
+            font-weight: 700;
+            color: var(--text-main);
+            opacity: 0.7;
+        }
+        /* --- SCROLL MOUSE ANIMATION --- */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            z-index: 5;
+            opacity: 0.8;
+        }
+
+        .mouse {
+            width: 30px;
+            height: 50px;
+            border: 2px solid var(--secondary-blue); /* Uses your neon blue variable */
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--text-main);
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            animation: scrollWheel 1.5s infinite;
+        }
+
+        .scroll-text {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: var(--text-main);
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+        }
+        /* --- UPDATED SPONSOR LAYOUT --- */
+.sponsors-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.sponsor-tier {
+    text-align: center;
+    padding: 30px;
+    background: var(--bg-card); /* Keeps dark mode compatibility */
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    min-width: 280px; /* Ensures they stack nicely on mobile */
+    border-top: 5px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-tier:hover {
+    transform: translateY(-5px);
+}
+
+.sponsor-tier h3 { color: var(--text-main); margin-bottom: 15px; }
+
+/* Tier Colors */
+.sponsor-tier.platinum { border-color: #e5e4e2; box-shadow: 0 10px 30px rgba(229, 228, 226, 0.2); }
+.sponsor-tier.gold { border-color: #ffd700; }
+.sponsor-tier.silver { border-color: #c0c0c0; }
+
+.sponsor-placeholder {
+    height: 100px;
+    background: var(--bg-body);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: var(--text-secondary);
+    border: 2px dashed var(--border-color);
+}
+        @keyframes scrollWheel {
+            0% { top: 10px; opacity: 1; }
+            100% { top: 30px; opacity: 0; }
+        }
+        /* --- ABOUT SECTION --- */
+        #about { background: var(--bg-card); transition: background 0.3s ease; }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .focus-areas li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        .focus-areas li::before {
+            content: '►';
+            color: var(--secondary-blue);
+            position: absolute;
+            left: 0;
+        }
+
+        /* --- TIMELINE SECTION --- */
+        .timeline-steps {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .timeline-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            right: 50px;
+            height: 4px;
+            background: var(--border-color);
+            z-index: 0;
+        }
+        .step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+        }
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+            box-shadow: 0 5px 15px var(--accent-glow);
+        }
+        .step h3 { margin-bottom: 15px; color: var(--primary-blue); }
+        .step p { color: var(--text-secondary); }
+
+        /* --- PRIZE POOL SECTION --- */
+        #prizes { background: var(--bg-card); transition: background 0.3s ease; }
+        .prize-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .prize-card {
+            background: var(--bg-body); /* Inverted for contrast */
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .prize-card:hover {
+            border-color: var(--secondary-blue);
+            transform: translateY(-10px);
+        }
+        .prize-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 5px;
+            background: var(--gradient-blue);
+        }
+        .prize-icon { font-size: 3rem; margin-bottom: 20px; }
+        .prize-amount {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin: 15px 0;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .prize-card.winner { transform: scale(1.05); z-index: 2; border-color: var(--secondary-blue); }
+
+        /* --- ACCORDION STYLES --- */
+        .accordion-container { max-width: 900px; margin: 0 auto; }
+        .accordion-item {
+            margin-bottom: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--bg-accordion);
+            transition: all 0.3s ease;
+        }
+        .accordion-header {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            background: var(--bg-accordion);
+            color: var(--text-main);
+            transition: background 0.3s ease;
+        }
+        .accordion-header:hover { background: var(--bg-accordion-hover); }
+        .accordion-icon { font-size: 1.5rem; transition: transform 0.3s ease; color: var(--primary-blue); }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 25px;
+            opacity: 0;
+            color: var(--text-secondary);
+        }
+        
+        /* Active State */
+        .accordion-item.active { border-color: var(--secondary-blue); }
+        .accordion-item.active .accordion-header { background: var(--bg-accordion-hover); color: var(--primary-blue); }
+        .accordion-item.active .accordion-icon { transform: rotate(180deg); }
+        .accordion-item.active .accordion-content {
+            max-height: 4000px;
+            padding: 20px 25px;
+            opacity: 1;
+            transition: all 0.3s ease-in;
+        }
+
+        /* Partner Grid */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .partner-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+        /* Updated Partner Logo Container */
+        .partner-logo {
+            width: 80px;
+            height: 80px;
+            background: #ffffff; /* White bg is safest for logos */
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Keeps square images inside the circle */
+            border: 2px solid var(--border-color);
+        }
+
+        /* Ensures the actual image fits perfectly */
+        .partner-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Prevents stretching */
+            padding: 8px; /* Gives the logo breathing room */
+        }
+        .partner-name { font-size: 0.9rem; font-weight: 600; color: var(--text-main); }
+
+        /* --- SPONSORS SECTION --- */
+        .sponsors-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .sponsor-tier {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            border-top: 5px solid #ddd;
+            transition: background 0.3s ease;
+        }
+        .sponsor-tier h3 { color: var(--text-main); }
+        .sponsor-tier.platinum { border-color: #e5e4e2; }
+        .sponsor-tier.gold { border-color: #ffd700; }
+        .sponsor-tier.silver { border-color: #c0c0c0; }
+        .sponsor-placeholder {
+            height: 100px;
+            background: var(--bg-body);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--text-secondary);
+            margin-top: 20px;
+            border: 2px dashed var(--border-color);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #050510; /* Always dark footer */
+            color: #fff;
+            padding: 60px 10% 30px;
+            text-align: center;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .footer-heading {
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 20px;
+            color: var(--secondary-blue);
+        }
+        .contact-info p { margin-bottom: 10px; display: flex; align-items: flex-start; }
+        .contact-icon { margin-right: 10px; color: var(--secondary-blue); }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* --- RESPONSIVE --- */
+       /* --- REFINED MOBILE VIEW (Full Screen Sections) --- */
+        @media (max-width: 768px) {
+            
+            /* 1. GLOBAL MOBILE LAYOUT (The "Full Screen" Fix) */
+            section { 
+                min-height: 100vh;       /* Force at least full screen height */
+                display: flex;           /* Enable flexbox for centering */
+                flex-direction: column;  /* Stack content vertically */
+                justify-content: center; /* Center content vertically if it's short */
+                padding: 100px 20px 60px 20px; /* ample padding top/bottom */
+                box-sizing: border-box;
+            }
+
+            /* 2. Header & Nav */
+            header { 
+                padding: 15px 20px; 
+                width: 100%; 
+                top: 0; 
+                background: rgba(0,0,0,0); /* Darker for better contrast */
+                backdrop-filter: blur(10px); 
+            }
+            .logos img { height: 35px; } 
+            .theme-switch-wrapper { top: 18px; right: 20px; }
+            .theme-toggle{width: 35px; height: 35px; display: grid; place-content: center;}
+            .fas{font-size:14px;}
+            /* 3. Hero Specifics */
+            .hero { 
+                min-height: 100vh; /* Ensure hero is also full screen */
+                justify-content: center; /* keep hero centered */
+                padding-top: 100px; /* compensation for header */
+            }
+            .main-title { 
+                font-size: 2.2rem; 
+                margin-bottom: 15px; 
+                word-wrap: break-word;
+            }
+            .hero-tagline { font-size: 1rem; margin-bottom: 30px; }
+            .cta-group { flex-direction: column; width: 100%; }
+            .btn { width: 100%; text-align: center; margin-bottom: 15px; }
+
+            /* 4. TIMELINE LAYOUT (Grid System) */
+            .timeline-steps {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                position: relative;
+                padding-left: 10px;
+                margin-top: 20px;
+            }
+            /* The Vertical Line */
+            .timeline-steps::before {
+                content: '';
+                position: absolute;
+                left: 60px; 
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: var(--border-color);
+                z-index: 0;
+            }
+            .step {
+                display: grid; 
+                grid-template-columns: 60px 1fr;
+                grid-template-rows: auto auto;
+                column-gap: 25px;
+                row-gap: 5px;
+                text-align: left;
+                position: relative;
+                z-index: 1;
+            }
+            .step-icon {
+                grid-column: 1;
+                grid-row: 1 / span 2;
+                width: 60px; height: 60px; font-size: 1.5rem;
+                margin: 0;
+            }
+            .step h3 {
+                grid-column: 2; grid-row: 1;
+                margin-bottom: 0; font-size: 1.1rem;
+                align-self: end; line-height: 1.2;
+            }
+            .step p {
+                grid-column: 2; grid-row: 2;
+                font-size: 0.95rem; line-height: 1.5; opacity: 0.9; margin-top: 5px;
+            }
+
+            /* 5. Prize Cards */
+            .prize-grid { grid-template-columns: 1fr; gap: 20px; }
+            .prize-card.winner { order: -1; transform: scale(1); border-width: 2px; }
+
+            /* 6. Clean Up */
+            .about-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-robot-hand, .rocket { display: none; }
+            .anticipate-text { position: relative; bottom: auto; margin-top: 40px; letter-spacing: 4px; font-size: 0.8rem; }
+            
+            /* 7. Footer - Don't force full height on footer */
+            footer { min-height: auto; padding: 60px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header>
+        <div class="logos">
+            <img src="https://pbs.twimg.com/profile_images/1946838873339736064/O6SMz52N_400x400.jpg" alt="FUNAAB Logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jDHC-DSpmr9gefCynU974RqlTnOd7gb-8w&s" alt="AMTES Logo">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content hidden">
+            <div class="amtes-title">MECHATRONICS</div>
+            <h1 class="main-title gradient-text flyer-text">
+                INTER VARSITY<br>COMPETITION
+            </h1>
+            <h2 style="font-size: 1.5rem; margin-bottom: 15px; color: var(--text-main);">National Mechatronics Exhibition</h2>
+            <p class="hero-tagline">
+                Aggregating the top 1% of Mechatronics engineering talent from across Nigeria.
+            </p>
+            <div class="cta-group">
+                <a href="https://forms.gle/CnhijHyPMPUcfEV9A" class="btn btn-primary">Apply Now</a>
+                <a href="#sponsors" class="btn btn-secondary">Become a Sponsor</a>
+            </div>
+        </div>
+
+
+        <img src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png" alt="Rocket" class="rocket rocket-left float-anim" style="animation-delay: 0.5s; filter: drop-shadow(0 0 10px var(--secondary-blue));">
+        <img src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png" alt="Rocket" class="rocket rocket-right float-anim" style="animation-delay: 1s; filter: drop-shadow(0 0 10px var(--secondary-blue));">
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">SCROLL</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title hidden">About The Competition</h2>
+        <div class="about-grid">
+            <div class="hidden">
+                <p style="font-size: 1.1rem; margin-bottom: 20px; color: var(--text-secondary);">
+                    This is Nigeria's premier Mechatronics inter-varsity competition, challenging undergraduates to conceptualize and build real-world solutions. We aim to promote innovation and problem-solving among engineering students.
+                </p>
+                <div style="background: var(--gradient-blue); padding: 20px; border-radius: 10px; color: white; display: inline-block; margin-top: 20px;">
+    <strong>The Goal:</strong> Promote innovation and creativity and connect industries to top Mechatronics talents in Nigeria.
+</div>
+            </div>
+            <div class="hidden">
+                <h3 style="margin-bottom: 20px; color: var(--primary-blue);">Focus Areas:</h3>
+                <ul class="focus-areas" style="font-size: 1.1rem;">
+                    <li>Artificial Intelligence (AI)</li>
+                    <li>Internet of Things (IoT)</li>
+                    <li>Industry 5.0 Technologies</li>
+                    <li>Robotics & Automation</li>
+                    <li>Software Solutions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2 class="section-title hidden">Competition Timeline</h2>
+        <div class="timeline-steps">
+            <div class="step hidden">
+                <div class="step-icon"><i class="fa-solid fa-file-contract"></i></div>
+                <h3>Call for Entries</h3>
+                <p>Students complete an online application to submit project details and demo videos.</p>
+            </div>
+            <div class="step hidden" style="transition-delay: 0.2s;">
+                <div class="step-icon"><i class="fas fa-filter"></i></div>
+                <h3>Screening</h3>
+                <p>Projects are evaluated to select the <strong>Top 7 Finalists</strong>.</p>
+            </div>
+            <div class="step hidden" style="transition-delay: 0.4s;">
+    <div class="step-icon"><i class="fas fa-bolt"></i></div>
+    <h3>Live Grand Finale</h3>
+    <p>Finalists present live before judges at <strong>the grand finale</strong>.</p>
+</div>
+        </div>
+    </section>
+
+    <section id="prizes">
+        <h2 class="section-title hidden">Prize Pool</h2>
+        <div class="prize-grid">
+            <div class="prize-card hidden" style="transition-delay: 0.2s;">
+                <div class="prize-icon">🥈</div>
+                <h3 style="color:var(--text-main)">2nd Prize</h3>
+                <div class="prize-amount">₦400,000</div>
+                <p style="color:var(--text-secondary)">+ Sponsor-branded souvenirs</p>
+            </div>
+            <div class="prize-card winner hidden">
+                <div class="prize-icon">🏆</div>
+                <h3 style="color: var(--secondary-blue);">1st Prize</h3>
+                <div class="prize-amount" style="font-size: 3rem;">₦600,000</div>
+                <p style="font-weight: bold; color:var(--text-secondary)">+ Sponsor-branded souvenirs</p>
+            </div>
+            <div class="prize-card hidden" style="transition-delay: 0.4s;">
+                <div class="prize-icon">🎖️</div>
+                <h3 style="color:var(--text-main)">5 Finalists</h3>
+                <div class="prize-amount">₦200,000</div>
+                <p style="color:var(--text-secondary)">Each + Sponsor-branded souvenirs</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2 class="section-title hidden">Partner Universities</h2>
+        <div class="accordion-container hidden">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>View All Partner Universities</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="partners-grid">
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img style="width: 150%; height: 150%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU2fXCO8P_VZo5mxGSefWRp44VTU0ooj5R2g&s" alt="FUNAAB Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUNAAB</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.google.com/s2/favicons?domain=futo.edu.ng&sz=256" alt="FUTO Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUTO</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.google.com/s2/favicons?domain=uniben.edu&sz=256" alt="UNIBEN Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">UNIBEN</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.google.com/s2/favicons?domain=abu.edu.ng&sz=256" alt="ABU Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">ABU</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZGXo0C2gaco1LyShyDFvu8KgElcYnhFbCw&s" alt="Bells Tech Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">BELLS TECH</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img style="width: 130%; height: 130%;" src="https://www.clipartmax.com/png/middle/220-2205205_agricultural-economics-and-extension-technology-agricultural-federal-university-of-technology-minna-logo.png" alt="FUTMINNA Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUTMINNA</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.google.com/s2/favicons?domain=fuoye.edu.ng&sz=128" alt="FUOYE Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUOYE</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://tech-u.edu.ng/wp-content/uploads/2024/08/TECH-U-LOGO.png" alt="Tech-U Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">TECH-U IBADAN</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI8Lg3NAVK2q_eI620vmaZqS3KNv4R9pwzzg&s" alt="UNIDEL Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">UNIDEL AGBOR</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img style="width: 120%; height: 120%; margin-left: 5%;" src="https://www.google.com/s2/favicons?domain=afit.edu.ng&sz=128" alt="AFIT Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">AFIT-DEG KADUNA</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.google.com/s2/favicons?domain=atbu.edu.ng&sz=128" alt="ATBU Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">ATBU BAUCHI</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img style="width: 150%; height: 150%;" src="https://guninetwork.org/wp-content/uploads/2023/07/AUREClogos-2022-03-31T100332.997.png" alt="BUK Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">BUK</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5u6rERQ1_ds1BcAlATt73OQpkwFmqvzd3Lw&s" alt="FUTA Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUTA</div>
+    </div>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.naijabusiness.com.ng/wp-content/uploads/2023/03/Aliko-Dangote-University-Of-Science-And-Technology.jpg" alt="ADUSTECH Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">ADUSTECH</div>
+    </div>
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://universitycourses.ng/wp-content/uploads/2024/09/List-of-Courses-Offered-in-Federal-University-of-Transportation-Daura-Katsina-FUTD.webp" alt="FUTD Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">FUTD</div>
+    </div>
+    <div class="partner-card">
+        <div class="partner-logo">
+            <img src="https://www.uniport.edu.ng/wp-content/themes/unipix/assets/images/logo/uniport_logo.png" alt="Uniport Logo" onerror="this.style.display='none'">
+        </div>
+        <div class="partner-name">Uniport</div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors" style="background: var(--bg-card);">
+    <h2 class="section-title hidden">Sponsorship Opportunities</h2>
+    
+    <h3 style="text-align:center; margin-bottom:20px; color:var(--text-secondary);">Platinum Tier</h3>
+    <div class="sponsors-row hidden">
+        <div class="sponsor-tier platinum" style="max-width: 500px; margin: 0 auto;">
+            <h3>PLATINUM SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; margin:40px 0 20px; color:var(--text-secondary);">Gold Tier</h3>
+    <div class="sponsors-row hidden">
+        <div class="sponsor-tier gold">
+            <h3>GOLD SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+        <div class="sponsor-tier gold">
+            <h3>GOLD SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+    </div>
+
+    <h3 style="text-align:center; margin:40px 0 20px; color:var(--text-secondary);">Silver Tier</h3>
+    <div class="sponsors-row hidden">
+        <div class="sponsor-tier silver">
+            <h3>SILVER SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+        <div class="sponsor-tier silver">
+            <h3>SILVER SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+        <div class="sponsor-tier silver">
+            <h3>SILVER SPONSOR</h3>
+            <div class="sponsor-placeholder">Available Slot</div>
+        </div>
+    </div>
+</section>
+
+    <section id="faq" style="background: var(--bg-body);">
+        <h2 class="section-title hidden">Frequently Asked Questions</h2>
+        <div class="accordion-container hidden">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Q: Who is eligible to apply?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>A: Undergraduates from partner universities offering Mechatronics Engineering.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Q: What kind of projects can we submit?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>A: Projects involving robotics, automation, AI, IoT, and software solutions.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Q: How many projects make it to the live finale?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>A: The top 7 projects will be evaluated based on quality and engagement to compete live.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3 class="footer-heading">Contact Us</h3>
+                <div class="contact-info">
+                    <p><span class="contact-icon">📍</span>Federal University of Agriculture, Abeokuta. P.M.B 2240, Abeokuta, Nigeria.</p>
+                    <p><span class="contact-icon">✉️</span>amtesfunaab@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-heading">Phone Support</h3>
+                <div class="contact-info">
+                    <p><span class="contact-icon">📞</span>Joshua Ogundairo (President):<br> 09071178107</p>
+                    <p><span class="contact-icon">📞</span>Michael Olajire (Gen. Sec.):<br> 08130005682</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul style="line-height: 2;">
+                    <li><a href="#about" style="color: #ccc;">About</a></li>
+                    <li><a href="#timeline" style="color: #ccc;">Timeline</a></li>
+                    <li><a href="#prizes" style="color: #ccc;">Prizes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 AMTES FUNAAB Chapter. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // --- DARK MODE LOGIC ---
+        const toggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check Local Storage for saved preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            htmlElement.setAttribute('data-theme', savedTheme);
+            toggleBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Switch Icon
+            toggleBtn.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+
+        // --- ACCORDION LOGIC ---
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionItem = header.parentElement;
+                const isActive = accordionItem.classList.contains('active');
+
+                // Close all other items in this container
+                const container = accordionItem.parentElement;
+                container.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    accordionItem.classList.add('active');
+                }
+            });
+        });
+
+        // --- SCROLL ANIMATION ---
+        const observerOptions = { threshold: 0.2 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hidden').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
+
