@@ -111,7 +111,7 @@ Suspension work, however, was a beautiful new world. I learned about:
 
 Even though the time was short, I enjoyed every moment. It felt like I was ending my IT on a high note.
 
-![A picture of me at the suspension department](./picture-3.jpg)
+![A picture of me at the suspension department](./picture-2.jpg)
 
 ## Things My IT Experience Taught Me
 
