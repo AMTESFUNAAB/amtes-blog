@@ -53,11 +53,11 @@ At some point, I started doing calculations and permutations in my head and real
 
 300 level was great. It felt like I got my rhythm back. We didn’t do SWEP in 200 level like other sets. When we finally did it, it was actually fun. We went around Dufarms, did some basic engineering work, and even built a restroom beside the Civil Engineering building. I still have pictures of it. It turned out really nice.
 
-![Image showing Joshua and his friends working on the restroom.](./picture-1.jpg)
+![Image showing Joshua and his friends working on the restroom.](./picture-1.jpeg)
 
 That experience helped me bond with my coursemates. Before then, I didn’t really interact with most people. But working together like that, sweating under the sun, building something physical, it brought us together in a way regular group assignments never could.
 
-![Image showing a group of MTE students working on a construction.](./picture-2.jpg)
+![Image showing a group of MTE students working on a construction.](./picture-2.jpeg)
 
 So that was how we did our SWEP back then. 
 
@@ -127,7 +127,7 @@ Honestly, it was mainly the cost of hardware that was holding me back. I also ha
 
 There was this greenhouse beside the MTE building made with tarpaulin. It was meant to be our  SWEP project back in 2019. We had different team members working on each part, and even though it was a small project, it gave us an experience in managing and executing something tangible.
 
-![Image showing a group of MTE students working on the green house.](./picture-3.jpg)
+![Image showing a group of MTE students working on the green house.](./picture-3.jpeg)
 
 So, that’s basically the full picture of my startup experience. Even though I had to pause, I’ve never stopped thinking about it, and honestly, I fully intend to pick it back up again when the timing is right. I think I will tomorrow.
 
