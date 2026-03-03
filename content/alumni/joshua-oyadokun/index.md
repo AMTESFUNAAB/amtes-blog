@@ -29,7 +29,7 @@ While in the technical school, we were also advised to take up some kind of appr
 
 That was when I moved on to computer engineering—let me not even package it. I went to Computer Village in Ikeja to learn how to fix laptops. I also did a bit of electrical apprenticeship; I had an uncle who always took me to different sites to fix things and handle home and industrial electrification. So, basically, I touched mobile repairs, computer repairs, and some electrical work too.
 
-When I sat for JAMB in 2015 and was about to choose a course, I originally wanted mechanical engineering. But then I saw something called “Mechatronics” in the brochure, and I was like, “What’s this one again?” I did a bit of research, mostly from the FUNAAB website and Wikipedia, because that was all I had at the time, and realized it was like a combination of everything I’d been doing. The mobile repair from technical school, my experience with laptops, and the electrical work I did with my uncle. When I discovered Mechatronics, I was like, “Wow, this actually looks perfect for me.” It felt like everything aligned, so I just went for it. That was how I got into the catalyst that pushed me toward Mechatronics.
+When I sat for JAMB in 2015 and was about to choose a course, I originally wanted mechanical engineering. But then I saw something called “Mechatronics” in the brochure, and I was like, “What’s this one again?” I did a bit of research, mostly from the FUNAAB website and Wikipedia, because that was all I had at the time, and realized it was like a combination of everything I’d been doing. The automobile repair from technical school, my experience with laptops, and the electrical work I did with my uncle. When I discovered Mechatronics, I was like, “Wow, this actually looks perfect for me.” It felt like everything aligned, so I just went for it. That was how I got into the catalyst that pushed me toward Mechatronics.
 
 Fun fact, all these things I learned that were supposed to be a source of income for me during school, like a side hustle to support myself, I basically ended up doing most of them for free. I can remember fixing people’s phones, laptops, and even doing electrical work, all for free. Honestly, I’m a very bad businessman. Looking back, that was not the smartest decision at all. But funny enough, all those decisions, and that whole path, are what eventually pushed me into Mechatronics. They all came from the same engineering root, just different branches.
 
@@ -63,23 +63,23 @@ So that was how we did our SWEP back then.
 
 For my IT in 400 level, I actually split it across two places. The first was an industrial automation firm that handled a lot of work for food and beverage companies. But honestly, I got tired. I realized that wasn’t what I wanted to do. It was heavily electrical, lots of cabling, wiring, and industrial setups, and I just didn’t see myself doing that long-term. So after about three months, I left.
 
-Then I moved to another place in Ajah to complete the IT. That was where I got my first real introduction to robotics working with Arduinos, sensors, programming, all of that. It opened my eyes. Around that time, COVID hit, so we ended up having almost a full year free. I took that as an opportunity to practice. I ordered some kits from AliExpress, stayed home, and just kept learning and experimenting.
+Then I moved to another place in Abeokuta to complete the IT. That was where I got my first real introduction to robotics working with Arduinos, sensors, programming, all of that. It opened my eyes. Around that time, COVID hit, so we ended up having almost a full year free. I took that as an opportunity to practice. I ordered some kits from AliExpress, stayed home, and just kept learning and experimenting.
 
 I built a lot of small projects, wrote code, burned components, fixed them, spoiled them again, you know the drill. That experience helped me a lot when it was time for my final-year project. I can’t even remember if I chose the project topic myself or if it was assigned, but building and designing the system felt natural because of all the practice I had already done.
 
 But that doesn’t mean it was easy. There were days I genuinely cried out of frustration. Some errors refused to go. Some code just wasn’t making sense. I struggled, but it was worth it in the end. All of that shaped my academic journey in Mechatronics.
 
-Aside from academics, I also have some non-academic stories. Most of them were leadership or politically inclined. I joined the engineering student engineering association without really knowing why, maybe because I had a friend who encouraged me. There was also this push for our department to have more visibility within the college, since the majority representation always seemed to come from other engineering departments.
+Aside from academics, I also have some non-academic stories. Most of them were leadership or politically inclined. I joined the engineering student association without really knowing why, maybe because I had a friend who encouraged me. There was also this push for our department to have more visibility within the college, since the majority representation always seemed to come from other engineering departments.
 
-I decided to run for a AGS, and before I knew it, I was doing the actual work. I had to meet with various school officials, including our staff adviser, and I even went to Senate a couple of times. I didn’t meet the VC, but I met his secretary often. Those experiences put me in contact with top people in the school, and it opened my eyes. We discussed programs, got advice, and planned activities for the faculty and the association.
+I decided to run for AGS, and before I knew it, I was doing the actual work. I had to meet with various school officials, including our staff adviser, and I even went to the Senate a couple of times. I didn’t meet the VC, but I met his secretary often. Those experiences put me in contact with top people in the school, and it opened my eyes. We discussed programs, got advice, and planned activities for the faculty and the association.
 
 All of that made me realize how much I enjoyed leadership. I loved helping people—students, juniors, everyone. And I also noticed that our department was practically invisible on campus. That motivated me to run for president when I got to 500 level.
 
-Outside engineering associations, I was also a director in an international leadership organization. I served as Director of Programs and Projects. We handled several community-based initiatives—like book drives where we donated books to secondary school students and educated them on different topics. It was a lot of impact work.
+Outside of engineering associations, I was also a director in an international leadership organization. I served as Director of Programs and Projects. We handled several community-based initiatives—like book drives where we donated books to secondary school students and educated them on different topics. It was a lot of impactful work.
 
-Mixing academics with all this wasn’t easy. By 300 level, things became intense. My earlier plan didn’t work out, so I had to look for new ways to grow. That’s when I really leaned into leadership and community-building.
+Mixing academics with all this wasn’t easy. Things became intense, and earlier plans didn’t work out, so I had to look for new ways to grow. That’s when I really leaned into leadership and community-building.
 
-**I really like that your answers are very indepth. You talked about your leadership experience earlier, and that actually leads me to my next question. You mentioned serving with JCI, taking the AGS role for NUESA and eventually becoming the AMTES president for the 2020/2021 session.**
+**I really like that your answers are very in-depth. You talked about your leadership experience earlier, and that actually leads me to my next question. You mentioned serving with JCI, taking the AGS role for NUESA and eventually becoming the AMTES president for the 2020/2021 session.**
 
 **A lot of students see leadership positions as something that doesn’t really matter, like they can’t actually make an impact or that it’s just for show. They don’t always recognize the value these roles bring.**
 
@@ -87,15 +87,15 @@ Mixing academics with all this wasn’t easy. By 300 level, things became intens
 
 Yes, definitely. Joining the association was really a push from the past president. I think he was also the first president who happened to be a member of JCI as well. We met at one of the meetings on a Sunday, and I approached him to ask about the department, what the plan was to push us forward and make us more visible.
 
-He explained that we needed proper representation, especially at the college level and even at the ACG level if possible, because honestly, nobody from our department was really showing up in those spaces. And that got me thinking: if I want progress, and if I keep saying I care about the department, what am I doing about it?
+He explained that we needed proper representation, especially at the college level and even at the AGS level if possible, because honestly, nobody from our department was really showing up in those spaces. And that got me thinking: if I want progress, and if I keep saying I care about the department, what am I doing about it?
 
-He asked me what my plans were for the next election, and at first I brushed it off, saying I didn’t have time and that balancing everything would be too much. It was book they sent me to come and read. But after that meeting, I kept thinking about it. Eventually, I picked up the form for the AGS position. I think the form was around 3 to 5k, it felt like a lot at the time. But I told myself that even if I didn’t win, at least I made the move.
+He asked me what my plans were for the next election, and at first I brushed it off, saying I didn’t have time and that balancing everything would be too much. It was book they sent me to come and read. But after that meeting, I kept thinking about it. Eventually, I picked up the form for the AGS position. I think the form was around 3 to 5k; it felt like a lot at the time. But I told myself that even if I didn’t win, at least I made the move.
 
 That was the first real push into the whole leadership structure. And once I got in, I told you how I started meeting the principal bodies of the school and getting exposed to how things actually work behind the scenes. It’s really nice to have people who genuinely have your best interests at heart at those levels. That was what pushed me, and honestly, most of these leadership experiences helped me personally as well.
 
 After my NYSC, when I got my first job in 2022, I joined a team of five. We had two developers, and we were building projects for the government at the time. Eventually, our team lead had to travel abroad for his master’s, and someone needed to step in for him.
 
-He called me into his office one day and said he’d noticed the way I interacted with people, how I motivated the team, how I organized things, the same habits I picked up back in school from leadership roles. He said those qualities were exactly what the team needed, and he wanted me to step into the role.
+My boss called me into his office one day and said he’d noticed the way I interacted with people, how I motivated the team, how I organized things, the same habits I picked up back in school from leadership roles. He said those qualities were exactly what the team needed, and he wanted me to step into the role.
 
 I was hesitant at first. I wasn’t sure if I was ready, but deep down I really wanted it. And he added a nice bonus to the offer, so that helped too.
 
@@ -111,7 +111,7 @@ Yeah, I actually designed it myself.
 
 But now that you’re describing it, I feel like I need to see it again, because I can’t remember exactly how it looked. If you find it, please send it to me as well.
 
-**Of course. On the next question, you mentioned that after graduating from FUNAAB, you tried to start your own robotics firm. I honestly applaud that, it was very bold and courageous. You mentioned that you had some limitations, was it hardware, finances, or both, that eventually made you put the idea on hold for a bit. I’d love for you to walk us through that journey.**
+**Of course. On the next question, you mentioned that after graduating from FUNAAB, you tried to start your own robotics firm. I honestly applaud that; it was very bold and courageous. You mentioned that you had some limitations; was it hardware, finances, or both that eventually made you put the idea on hold for a bit? I’d love for you to walk us through that journey.**
 
 **What were some of the things you learned along the way? What was the hardest part of that experience? And finally, what would you say was your biggest takeaway from trying to start your own robotics firm?**
 
