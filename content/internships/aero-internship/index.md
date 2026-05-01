@@ -149,4 +149,4 @@ Mars taught me precision. It taught me patience. It taught me that the details n
 
 *From all of us at AMTES, we celebrate you!*
 
-*You can connect with him on LinkedIn [here.](https://www.linkedin.com/in/chidera0igbodike/)
+*You can connect with him on LinkedIn [here.](https://www.linkedin.com/in/chidera0igbodike/)*
