@@ -45,13 +45,15 @@ One of the first systems that genuinely captured my attention was the deicing bo
 
 ![Image showing the deicing boot](./deicing.png)
 
+*Image source: [Youtube](https://www.youtube.com/watch?v=z5IIcwzy_34)
+
 Initially, it seemed relatively straightforward, but the deeper I went into understanding how it functioned, how leak testing worked, and how replacements were carried out, the more I started appreciating the level of engineering hidden behind components most passengers would never even notice during a flight. That realization stayed with me throughout the internship because it highlighted something fundamental about aviation: the smallest details often carry enormous responsibility. Every process, every inspection, and every component exists because somebody, somewhere, once understood the consequences of neglecting it.
 
 ## The Experience That Changed Everything
 
 Not too long afterward, I was given my first hands-on task. Under close supervision, I was allowed to fabricate a strip that would be used in fixing a cargo door. To someone outside the field, that task might sound relatively insignificant, but for me, it represented something much bigger than the work itself. For the first time, I wasn’t simply observing maintenance activities from a distance anymore. I was participating in them, however small my contribution might have been.
 
-![Image showing me and some other interns](./1.jpg)
+![Image showing me and some other interns](./1.jpeg)
 
 That changed something for me because the aircraft stopped feeling like this distant, untouchable machine and started feeling like something I could genuinely interact with and understand. Up until then, much of my experience had involved observation, learning, and trying to make sense of systems from the outside. But contributing, even in a small supervised way, made the environment feel less intimidating and more real. That was probably the first moment “Mars” started feeling slightly less distant to me.
 The true turning point of my internship, however, came during the C-checks. That period completely transformed the way I saw aircraft maintenance and engineering as a whole. Before then, most of my learning had happened in fragments. I understood systems individually, learned procedures separately, and absorbed information in isolated pieces. The C-check brought everything together in a way that suddenly made the aircraft feel whole.
