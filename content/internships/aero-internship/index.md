@@ -64,7 +64,7 @@ Gradually, you begin noticing something remarkable about aircraft engineering: t
 
 But as incredible as the aircraft itself was, I think the people around me shaped my experience even more. What stood out most was how intentional the engineers were about involving interns in the learning process. Even when tasks were assigned based on complexity, they still found ways to explain things to us, answer questions, and ensure we understood not only what was happening but why it mattered. Somewhere along the line, the internship stopped feeling like ordinary maintenance exposure and started feeling like an education in mindset.
 
-## Things I enjoyed about working at Chevron
+## Things Aviation Taught Me
 
 ![Image showing a cockpit](./2.jpeg)
 
