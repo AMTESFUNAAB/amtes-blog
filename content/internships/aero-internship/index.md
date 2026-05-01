@@ -45,23 +45,24 @@ One of the first systems that genuinely captured my attention was the deicing bo
 
 ![Image showing the deicing boot](./deicing.png)
 
-*Image source: [Youtube](https://www.youtube.com/watch?v=z5IIcwzy_34)
+*Image source: [Youtube](https://www.youtube.com/watch?v=z5IIcwzy_34)*
 
 Initially, it seemed relatively straightforward, but the deeper I went into understanding how it functioned, how leak testing worked, and how replacements were carried out, the more I started appreciating the level of engineering hidden behind components most passengers would never even notice during a flight. That realization stayed with me throughout the internship because it highlighted something fundamental about aviation: the smallest details often carry enormous responsibility. Every process, every inspection, and every component exists because somebody, somewhere, once understood the consequences of neglecting it.
 
 ## The Experience That Changed Everything
 
-Not too long afterward, I was given my first hands-on task. Under close supervision, I was allowed to fabricate a strip that would be used in fixing a cargo door. To someone outside the field, that task might sound relatively insignificant, but for me, it represented something much bigger than the work itself. For the first time, I wasn’t simply observing maintenance activities from a distance anymore. I was participating in them, however small my contribution might have been.
+Not too long afterwards, I was given my first hands-on task. Under close supervision, I was allowed to fabricate a strip that would be used in fixing a cargo door. To someone outside the field, that task might sound relatively insignificant, but for me, it represented something much bigger than the work itself. For the first time, I wasn’t simply observing maintenance activities from a distance anymore. I was participating in them, however small my contribution might have been.
 
 ![Image showing me and some other interns](./1.jpeg)
 
 That changed something for me because the aircraft stopped feeling like this distant, untouchable machine and started feeling like something I could genuinely interact with and understand. Up until then, much of my experience had involved observation, learning, and trying to make sense of systems from the outside. But contributing, even in a small supervised way, made the environment feel less intimidating and more real. That was probably the first moment “Mars” started feeling slightly less distant to me.
 The true turning point of my internship, however, came during the C-checks. That period completely transformed the way I saw aircraft maintenance and engineering as a whole. Before then, most of my learning had happened in fragments. I understood systems individually, learned procedures separately, and absorbed information in isolated pieces. The C-check brought everything together in a way that suddenly made the aircraft feel whole.
 
-I still remember hearing the words, “Let’s open up the cargo door,” and somehow, from that moment onward, I started seeing the aircraft differently. It stopped looking like a collection of separate systems and started revealing itself as an interconnected structure where every component depended on another with extraordinary precision. We worked through different sections of the aircraft, including the wheel well, the cargo bay, the wing tips, and the deicing systems I had previously only understood from a surface level.
+I still remember hearing the words, “Let’s open up the cargo door,” and somehow, from that moment onward, I started seeing the aircraft differently. It stopped looking like a collection of separate systems and started revealing itself as an interconnected structure where every component depended on another with extraordinary precision. We worked through different sections of the aircraft, including the wheel well, the cargo bay, the wing tips, and the deicing systems, which I had previously only understood from a surface level.
 
 Gradually, you begin noticing something remarkable about aircraft engineering: the complexity is never unnecessary. Every single detail carries purpose behind it. That realization stayed with me constantly during the C-checks, especially while observing the B737. The aircraft felt like a masterpiece of engineering, not because it tried to appear impressive in an obvious way, but because every rivet, every reinforcement pattern, and every access panel reflected careful decisions balancing safety, accessibility, efficiency, and structural integrity.
-But as incredible as the aircraft itself was, I think the people around me shaped my experience even more. What stood out most was how intentional the engineers were about involving interns in the learning process. Even when tasks were assigned based on complexity, they still found ways to explain things to us, answer questions, and ensure we understood not only what was happening, but why it mattered. Somewhere along the line, the internship stopped feeling like ordinary maintenance exposure and started feeling like an education in mindset.
+
+But as incredible as the aircraft itself was, I think the people around me shaped my experience even more. What stood out most was how intentional the engineers were about involving interns in the learning process. Even when tasks were assigned based on complexity, they still found ways to explain things to us, answer questions, and ensure we understood not only what was happening but why it mattered. Somewhere along the line, the internship stopped feeling like ordinary maintenance exposure and started feeling like an education in mindset.
 
 ## Things I enjoyed about working at Chevron
 
