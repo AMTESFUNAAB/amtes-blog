@@ -17,14 +17,9 @@
     {{ partial "hero/basic.html" . }}
     {{ end }}
     {{ end }} -->
-    {{ if not (.Params.header | default true) }}
-    <style>
-        #single_header {
-            display: none;
-        }
-    </style>
-    {{ end }}
+
     {{/* Header */}}
+    {{ if .Params.header | default true }}
     <header id="single_header" class="mt-5 max-w-prose">
         {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
@@ -39,11 +34,12 @@
         <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
             {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
         </div>
-        <!-- Testing something... Bear with me -->
+
         {{ if not (.Params.showAuthorBottom | default (site.Params.article.showAuthorBottom | default false)) }}
         {{ template "SingleAuthor" . }}
         {{ end }}
     </header>
+    {{ end }}
 
     <!-- FULL WIDTH IMAGE -->
     {{ if .Page.Store.Get "fullwidth_image" }}

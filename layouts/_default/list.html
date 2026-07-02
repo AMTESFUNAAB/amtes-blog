@@ -13,15 +13,8 @@
     {{ end }}
   {{ end }}
 
-  {{ if not (.Params.header | default true) }}
-    <style>
-      header {
-        display: none;
-      }
-    </style>
-  {{ end }}
-
   {{/* Header */}}
+  {{ if .Params.header | default true }}
   <header>
     {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
@@ -33,6 +26,7 @@
       {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
     </div>
   </header>
+  {{ end }}
 
   {{/* Description (markdown content) */}}
   {{ $tocMargin := cond $showToc "mt-12" "mt-0" }}
