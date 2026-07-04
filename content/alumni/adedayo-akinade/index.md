@@ -197,7 +197,7 @@ Yeah.
 
 How did you know?
 
-**I actually met Pepper last year. **
+**I actually met Pepper last year.**
 
 Really? Where? 
 
@@ -243,7 +243,7 @@ And it's even harder if you're going there for a short-term stay. If you're goin
 
 But if you're there for your master's or PhD or something, it's ongoing. So you spend the first six months trying to understand things. And once you do, you just become like this robot that has a routine. You know what to do, you know what to cook, you know what to eat, and you're eating the same thing over and over again. That's a different problem entirely.
 
-But you just have to adapt. Like I said, the resilient Nigerian in us always refuses to give up. Even if it means crying on your bed every night, you still come out, snap pictures, and post them. Yeah, so that's just it.
+But you just have to adapt. As I said, the resilient Nigerian in us always refuses to give up. Even if it means crying on your bed every night, you still come out, snap pictures, and post them. Yeah, so that's just it.
 
 **Mm-hmm. Okay, we're almost done. We have about 10 minutes left, and I don't want to eat into your time. We have about three questions left.**
 
