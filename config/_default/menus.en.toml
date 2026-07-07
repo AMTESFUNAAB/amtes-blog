@@ -66,6 +66,12 @@
   weight = 35
 
 [[main]]
+  name = "Interdepartmental"
+  parent = "Community"
+  pageRef = "interdepartmental"
+  weight = 36
+
+[[main]]
   name = "Explore"
   weight = 40
 
