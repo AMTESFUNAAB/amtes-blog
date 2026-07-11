@@ -92,9 +92,13 @@
   parent = "Explore"
   pageRef = "docs"
   weight = 43
-  
-[[main]]
-  pre  = "github"
-  url = "https://github.com/AMTESFUNAAB/amtes-blog"
-  weight = 60
 
+# [[main]]
+#   pre  = "github"
+#   url = "https://github.com/AMTESFUNAAB/amtes-blog"
+#   weight = 60
+
+[[main]]
+    pre = "linkedin"
+    url = "https://linkedin.com/company/amtes-blog"
+    weight = 70
