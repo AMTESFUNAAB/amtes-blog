@@ -56,7 +56,7 @@ You can’t just write a fast algorithm (optimizing E), dump it on an oversized 
 
 Come to think of it, there are actually more immediate, physical problems caused by inefficient code in our field. Your Arduino, ESP32, or Raspberry Pi does more work and draws more current when your C++ runs unnecessary loops or processes bloated firmware. That has a direct implication on your battery pack. Your power source runs down faster, and if your project is plugged into the grid... well, I believe you get the gist by now.
 
-This power constraint is one of the major things we have to consider when designing IoT or Robotic systems, and I'll be revealing something big on it in the next episode.
+This power constraint is one of the major things we have to consider when designing IoT or Robotic systems, and I'll be revealing something on it in the next episode.
 
 As I bring this episode to a close, it was truly a lovely week in UNILAG (should I compare the campus to FUNAAB? Let me reserve my comment!), but the lessons learned will fundamentally shape the way we build systems from here on out. Remember, compute = carbon, and your code has real-world consequences.
 
