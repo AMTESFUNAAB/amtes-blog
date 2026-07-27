@@ -1,5 +1,5 @@
 ---
-title: "Managing Expectations"
+title: "Chronicles of a Dent-In-Progress"
 date: "2026-07-15T21:32:55+01:00"
 ---
 
