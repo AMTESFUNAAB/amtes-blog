@@ -1,6 +1,6 @@
 ---
 title: "🤖 [Ep 3] ROS, CAD and Research"
-date: 2026-07-29
+date: 2026-07-28
 authors:
   - "dannyuzo"
 draft: false

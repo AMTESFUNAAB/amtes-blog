@@ -1,5 +1,5 @@
 ---
-title: "Daniel U.'28"
+title: "Daniel U. '28"
 date: 2026-07-30
 ---
 
