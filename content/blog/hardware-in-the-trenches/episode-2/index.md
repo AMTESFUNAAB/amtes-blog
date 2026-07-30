@@ -60,4 +60,4 @@ This power constraint is one of the major things we have to consider when design
 
 As I bring this episode to a close, it was truly a lovely week in UNILAG (should I compare the campus to FUNAAB? Let me reserve my comment!), but the lessons learned will fundamentally shape the way we build systems from here on out. Remember, compute = carbon, and your code has real-world consequences.
 
-I've been DannyUzo'28, see you on the next one.
+I've been DannyUzo'39, see you on the next one.

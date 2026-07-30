@@ -9,5 +9,5 @@ cascade:
 ---
 
 {{< lead >}}
-This series follows a Mechatronics engineer’s day-to-day battle in SIWES I at the mechatronics engineering lab including reality of burnt microcontrollers, complicated wiring, fixing bugs, simulations, and the constant tension between building what you want and what you can afford.
+Engineering theory looks perfect on a whiteboard; reality is a burnt microcontroller, complicated wiring, fixing bugs at 3 AM, and the constant tension between building what you want and what you can afford. This series follows a Mechatronics engineer’s day-to-day battle to design and manufacture complex robotic systems including edge-AI drones and holonomic bases while navigating the chaotic realities of hardware development.
 {{< /lead >}}
