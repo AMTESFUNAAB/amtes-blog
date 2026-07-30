@@ -9,11 +9,6 @@ tags: ["arduino", "microcontrollers", "electronics"]
 header: true
 enableComments: true
 layout: centered
-cover:
-  src: "arduino_uno.jpg"
-  alt: "Arduino Uno Pinout and Components"
-  height: "1000"
-  width: "1000"
 ---
 
 Arduino is an open-source electronics platform that combines programmable microcontroller boards with an easy-to-use software environment. It is widely used for building embedded systems, robotics, Internet of Things (IoT) devices, automation systems, and educational projects due to its affordability, simplicity, and large community support.
