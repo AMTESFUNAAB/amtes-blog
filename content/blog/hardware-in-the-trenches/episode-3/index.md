@@ -5,7 +5,6 @@ authors:
   - "dannyuzo"
 draft: false
 summary: "The last few weeks have been a plethora of activities: simulations, steep learning curves, low-power drone research at ETH Zurich, web-based CAD modeling with Onshape, and modular software design with ROS."
-tags: ["ros", "cad", "robotics", "research"]
 header: true
 enableComments: true
 layout: centered
@@ -50,18 +49,17 @@ ROS stands for **Robot Operating System** and it's the backbone of all modern ro
 
 Although ROS is for advanced projects and would require a Raspberry Pi and the likes, it's worth learning if you want to work on industry-grade projects. There are also other distributions of ROS that can run on certain ESP modules, but forget Arduinos....they are really limited here. New models such as Arduino Uno Q, R4 and others are being released with much more capabilities, some with AI. As you delve deeper into embedded systems and robotics, you start seeing the limits of Arduinos & ESPs, forcing you to either optimize or upgrade. I would be starting a whole new series on this titled *"Microcontrollers: The part YouTube doesn't teach"* where we'd discuss further. 
 
-> ROS (Robot Operating System) uses a modular architecture based on nodes, topics, publishers, and subscribers. Instead of one large program controlling the entire robot, each component runs as an independent node with a specific responsibility. These nodes communicate by publishing and subscribing to topics.
->
-> Consider an autonomous rover with a LiDAR, depth camera, LED indicators, DC motors, and a central controller.
->
-> * **LiDAR Node** publishes distance data to `/scan`.
-> * **Depth Camera Node** publishes image and depth data.
-> * **Obstacle Detection Node** subscribes to both sensors to detect obstacles.
-> * **Path Planning Node** calculates a safe path and publishes movement commands to `/cmd_vel`.
-> * **Motor Controller Node** subscribes to `/cmd_vel` and drives the DC motors.
-> * **LED Node** subscribes to status updates and changes the LED color based on the robot's state.
->
-> For example, when the LiDAR detects an obstacle, it publishes data to `/scan`. The obstacle detection node processes it, the path planner generates a new route, the motor controller changes the rover's movement, and the LED node switches the indicators to red. This modular design makes ROS systems easier to develop, test, and expand.
+ROS uses a modular architecture based on nodes, topics, publishers, and subscribers. Instead of one large program controlling the entire robot, each component runs as an independent node with a specific responsibility. These nodes communicate by publishing and subscribing to topics.
+
+Consider an autonomous rover with a LiDAR, depth camera, LED indicators, DC motors, and a central controller.
+ **LiDAR Node** publishes distance data to a topic called `/scan`
+ **Depth Camera Node** publishes image and depth data.
+ **Obstacle Detection Node** subscribes to both sensors (their topics) to detect obstacles.
+ **Path Planning Node** calculates a safe path and publishes movement commands to `/cmd_vel` (command velocity). 
+ **Motor Controller Node** subscribes to `/cmd_vel` and drives the DC motors.
+ **LED Node** subscribes to status updates and changes the LED color based on the robot's state.
+
+For example, when the LiDAR detects an obstacle, it publishes data to `/scan`. The obstacle detection node processes it, the path planner generates a new route, the motor controller changes the rover's movement, and the LED node switches the indicators to red. This modular design makes ROS systems easier to develop, test, and expand.
 
 And that, my friends, has been ROS in 3 minutes. There are still more things to it such as URDF files, code architectures, Transform Systems (TF), Rviz, Gazebo, etc. 
 
