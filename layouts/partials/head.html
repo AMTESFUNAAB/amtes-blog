@@ -139,7 +139,7 @@
     type="text/javascript"
     src="{{ $jsAppearance.RelPermalink }}"
     integrity="{{ $jsAppearance.Data.Integrity }}"></script>
-  {{/* partial "language-redirect.html" . */}}
+  {{ partial "language-redirect.html" . }}
   {{ $enableA11y := .Site.Params.enableA11y | default false }}
   {{ if $enableA11y }}
     {{ $jsA11y := resources.Get "js/a11y.js" | resources.Minify | resources.Fingerprint $alg }}
@@ -162,37 +162,22 @@
   {{/* JS deferred */}}
   {{ $jsResources := slice }}
   {{ if site.Params.footer.showScrollToTop | default true }}
-    {{ with resources.Get "js/scroll-to-top.js" }}
-      {{ $jsResources = $jsResources | append . }}
-    {{ end }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
   {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
-    {{ with resources.Get "lib/fuse/fuse.min.js" }}
-      {{ $jsResources = $jsResources | append . }}
-    {{ end }}
-    {{ with resources.Get "js/search.js" }}
-      {{ $jsResources = $jsResources | append . }}
-    {{ end }}
+    {{ $fuseRaw := resources.Get "lib/fuse/fuse.min.cjs" }}
+    {{ $fuse := resources.FromString "lib/fuse/fuse.min.js" (replace $fuseRaw.Content "module.exports=" "window.Fuse=") }}
+    {{ $jsResources = $jsResources | append $fuse | append (resources.Get "js/search.js") }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
-    {{ with resources.Get "js/code.js" }}
-      {{ $jsResources = $jsResources | append . }}
-    {{ end }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/code.js") }}
   {{ end }}
   {{ if .Site.Params.rtl | default false }}
-    {{ with resources.Get "js/rtl.js" }}
-      {{ $jsResources = $jsResources | append . }}
-    {{ end }}
+    {{ $jsResources = $jsResources | append (resources.Get "js/rtl.js") }}
   {{ end }}
-  {{ with resources.Get "js/katex-render.js" }}
-    {{ $jsResources = $jsResources | append . }}
-  {{ end }}
-  {{ with resources.Get "js/print-support.js" }}
-    {{ $jsResources = $jsResources | append . }}
-  {{ end }}
-  {{ with resources.Get "js/email.js" }}
-    {{ $jsResources = $jsResources | append . }}
-  {{ end }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/email.js") }}
   {{ if $jsResources }}
     {{ $bundleJS := $jsResources | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint $alg }}
     <script
