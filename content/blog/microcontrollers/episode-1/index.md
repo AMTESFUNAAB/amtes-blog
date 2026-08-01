@@ -4,8 +4,7 @@ date: 2026-07-29
 authors:
   - "dannyuzo"
 draft: false
-summary: "An introduction to the Arduino platform, focusing on the processing core, power delivery, I/O pins, and communication systems of the Arduino Uno."
-tags: ["arduino", "microcontrollers", "electronics"]
+summary: "An introduction to the Arduino platform, focusing on the processing core, power delivery, I/O pins, and communication systems of the Arduino Uno.
 header: true
 enableComments: true
 layout: centered
@@ -25,7 +24,7 @@ This is the style I'd go for—still technically accurate, but it feels like som
 
 ---
 
-# The Processing Core (The Brain 🧠)
+# The Processing Core
 
 ### **ATmega328 Microcontroller**
 
@@ -41,7 +40,7 @@ Your laptop speaks USB. The ATmega328 doesn't—it only understands Serial commu
 
 ---
 
-# Power Delivery (Food & Energy 🔋)
+# Power Delivery
 
 ### **Barrel Jack (7V–12V)**
 
@@ -61,7 +60,7 @@ These provide regulated power for sensors and small modules. They're **not** mea
 
 ---
 
-# The I/O Pins (Hands and Eyes 👋)
+# The I/O Pins
 
 ### **Digital Pins (0–13)**
 
@@ -89,7 +88,7 @@ This simply tells shields what voltage the Arduino is using (5V on the Uno). Thi
 
 ---
 
-# Communication (How Components Gossip 📡)
+# Communication
 
 ### **TX & RX**
 
@@ -105,7 +104,7 @@ SPI is the Arduino's "fast lane" for communication. Devices like SD card modules
 
 ---
 
-# Low-Level Control (The Emergency Buttons 🚨)
+# Low-Level Control
 
 ### **Reset Button**
 
