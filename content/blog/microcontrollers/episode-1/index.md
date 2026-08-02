@@ -4,7 +4,7 @@ date: 2026-07-29
 authors:
   - "dannyuzo"
 draft: false
-summary: "An introduction to the Arduino platform, focusing on the processing core, power delivery, I/O pins, and communication systems of the Arduino Uno.
+summary: "An introduction to the Arduino platform, focusing on the processing core, power delivery, I/O pins, and communication systems of the Arduino Uno."
 header: true
 enableComments: true
 layout: centered
