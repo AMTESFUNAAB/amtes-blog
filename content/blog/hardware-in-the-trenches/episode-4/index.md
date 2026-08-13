@@ -12,7 +12,7 @@ layout: centered
 
 {{< katex >}}
 
-We all know robots to be physical, moving motors here, actuating servos there, LEDs blinking, and wires everywhere. Engineers have so designed it that we don't see the underlying architecture. 
+We all know robots to be physical, motors moving here, actuating servos there, LEDs blinking, and wires everywhere. Engineers have so designed it that we don't see the underlying architecture. 
 Over the last few weeks I've been building something pretty cool, amazing infact, its going to blow your mind. Behold, my creation:
 
 {{< carousel images="{image1.png,image2.png,image3.png}" captions="{image1.png:Wait; what's this? It looks confusing,image2.png:A bit better but I still don't get it.,image3.png:Okay; it makes a bit more sense now}" >}}

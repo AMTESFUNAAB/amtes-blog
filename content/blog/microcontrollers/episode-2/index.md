@@ -12,7 +12,7 @@ layout: centered
 
 {{< katex >}}
 
-Pulse Width Modulation has personally burgled me in the past, even ChatGPT wasn't doing justice to the topic for me. However, PWM is used everywhere in modern electronics all because of a problem digital systems came along with. 
+Pulse Width Modulation has personally boggled me in the past, even ChatGPT wasn't doing justice to the topic for me. However, PWM is used everywhere in modern electronics all because of a problem digital systems came along with. 
 
 Last semester, I took a very interesting and well understandable course (kindly swap those words with antonyms) called Signals and Systems... MTE 306. The early stages of the course discussed what digital and analog systems were. To really understand PWM, you need to digest this concept and understand how Digital systems work. Let's do a quick definition. 
 
