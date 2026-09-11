@@ -5,7 +5,6 @@ authors:
   - "dannyuzo"
 draft: false
 summary: "You want to build a simple obstacle-avoiding robot... but what happens when yours aggressively vibrates and resets? This series exists to transition you from a hardware prompt engineer to a real Mechatronics Engineer."
-tags: ["microcontrollers", "electronics", "robotics", "embedded-systems"]
 header: true
 enableComments: true
 layout: centered
