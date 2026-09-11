@@ -1,49 +1,37 @@
 ---
-title: "🔌 [Ep 2] What exactly is PWM?"
+title: "🔌 [Ep 2] GPIO vs Digital vs Analog Pins"
 date: 2026-08-07
 authors:
   - "dannyuzo"
 draft: false
-summary: "An in-depth explanation of Pulse Width Modulation (PWM), duty cycles, analog vs digital signals, and how microcontrollers simulate analog outputs."
+summary: "An explanation of GPIO, Digital, and Analog pins on microcontrollers, their key differences, and when to use each in embedded systems."
 header: true
 enableComments: true
 layout: centered
 ---
 
-{{< katex >}}
+I know this might sound really easy, but is it? We roughly assume all pins are GPIO and then categorize them into Digital and Analog. That's not quite the case. This episode will explain exactly what they are, the differences, and the use cases.
 
-Pulse Width Modulation has personally boggled me in the past, even ChatGPT wasn't doing justice to the topic for me. However, PWM is used everywhere in modern electronics all because of a problem digital systems came along with. 
+### What is GPIO?
 
-Last semester, I took a very interesting and well understandable course (kindly swap those words with antonyms) called Signals and Systems... MTE 306. The early stages of the course discussed what digital and analog systems were. To really understand PWM, you need to digest this concept and understand how Digital systems work. Let's do a quick definition. 
+Stands for General Purpose Input and Output. A GPIO pin is a pin that can be configured by software for general-purpose digital input or output. For simplicity, we can call them "interactive pins" because not every pin on a microcontroller is user-programmable. For instance, you have Power & Ground Pins (VCC, 5V, 3.3V and GND) and then System Pins like RESET and oscillator pins.
 
-> **Analog signals** are continuous in both time and amplitude. This means that their values can take any possible magnitude within a given range. **Digital signals**, in contrast, are discrete in both time and amplitude. Their values are limited to specific levels, e.g., binary.
+So, while many digital and analog-capable pins can also be GPIOs, the exact capabilities depend on the microcontroller.
 
-Digital signals are basically 1s and 0s, ON or OFF, true or false, no in-between. This is the problem I mentioned earlier. Have you ever wondered how your phone is able to reduce its brightness, or how your laptop increases and decreases the intensity of its cooling fan? Let's make it a bit mechatronic: how does your Arduino reduce your motor speed, or how does a flight controller control the speed of the propellers using the ESC? Knowing fully well these systems are digital systems... 0s and 1s. It's all PWM!
+### Analog pins
 
-Analog systems can increase or decrease in value, such as using a potentiometer to control speed. Let me just do a crash course on how potentiometers work. A potentiometer is basically a three‑terminal variable resistor that can act as a voltage divider. When connected between a supply voltage (e.g., 5V) and ground, its wiper output produces an analog voltage proportional to its rotation position. A variable resistor, in simple words. This voltage can range from 0V to the supply voltage depending on the wiper setting. Digital systems can't do that... or do they? You'd be surprised how engineers solved this problem. One word.
+In microcontrollers, there are in-between pins. These pins are both analog-capable and digital. When you write your code, you act like a train conductor flipping a track switch. If you configure the pin as `ANALOG_INPUT`, the chip routes the electrical signal to the analog converter. If you configure it as `DIGITAL_INPUT`, it routes it to the digital logic. Meaning, any pin that has analog capabilities can usually also be configured to handle digital logic.
 
-**Duty Cycles.**
+### Digital Pins
 
-Okay, I know it's actually two words but who's counting. The concept of the duty cycle comes directly from telecommunications and clock signal engineering. In a modern microcontroller, the duty cycle is calculated, managed, and controlled entirely by dedicated hardware blocks called Hardware Timers/Counters working alongside specialized Compare Registers. From Arduino 101, I made mention of a 16MHz Crystal Oscillator which is basically the system clock. Using this system clock, Counter registers, and an output compare register, microcontrollers and digital systems can alter duty cycles. 
+These are pins that deal with logic states, typically represented as 0s and 1s. Self-explanatory. It accepts digital logic, where you'd delve into the fascinating world of logic gates (ELE308 and MTE304). Now, on a microcontroller, there are certain pins that are strictly digital. Unlike the "in-between" pins, you can't use them as analog inputs because they don't have an ADC connection.
 
-> A **Duty Cycle** is the percentage of time a signal is ON during one complete cycle.
+An example of this would be PWM pins. Even though PWM is used to simulate an analog output, the physical signal leaving the pin is 100% digital (in its own way).
 
-Imagine a light switch on a wall. If you flip the switch ON, the bulb is at 100% brightness. If you flip it OFF, the bulb is at 0% brightness. If you could flip that switch ON and OFF 100 times every second, your eyes would not see the flashing. Instead, because the bulb is only on for half the time, your brain perceives it as a steady light at 50% brightness. So when we alter how fast a signal flips per cycle, we also change the average output voltage. 
+### When to use Digital or Analog Pins.
 
-![PWM Waveforms](pwm_waveform.png)
+Digital pins are perfect for components that only have two states; completely ON or completely OFF. For instance, reading states such as detecting if a button is pressed or released, reading data from sensors, or simple outputs such as toggling an LED on and off, triggering buzzers, and then data transfers using various communication protocols.
 
-From a mathematical perspective:
-$$V_{\text{avg}} = V_{\text{high}} \times \text{Duty Cycle}(\\%) = V_{\text{high}} \times \frac{T_{\text{on}}}{T_{\text{on}} + T_{\text{off}}}$$
+You'd use PWM-capable pins when controlling components that need variable power or an analog-like output, such as DC motors, dimming LEDs, and sending precise timing pulses to position a mechanism at a specific angle.
 
-* **25% Duty Cycle (Quarter Power):** The signal is ON for 25% of the time and OFF for 75% of the time. 
-  5V System: \\(5\text{V} \times 0.25 = \mathbf{1.25\text{V}}\\) average.
-* **50% Duty Cycle (Half Power):** The signal is ON for 50% of the time and OFF for 50% of the time.  
-  5V System: \\(5\text{V} \times 0.50 = \mathbf{2.5\text{V}}\\) average.
-* **75% Duty Cycle (Three-Quarter Power):** The signal is ON for 75% of the time and OFF for 25% of the time.  
-  5V System: \\(5\text{V} \times 0.75 = \mathbf{3.75\text{V}}\\) average.
-
-The full concept of Duty Cycles in electronics is much deeper and genuinely intriguing, but it's out of scope for this particular topic so I won't be going any further.
-
- Nonetheless, the calculations above demonstrate how duty cycles increase and decrease the output voltage of a 5V system, e.g., an Arduino. This technique used to control the amount of power sent to an electronic device by turning the digital signal on and off incredibly fast is called **Pulse Width Modulation (PWM)**. To add a bit more context, notice that changing the duty cycle also changes the width of the pulses (waveforms) on the graph... hence the name. 
-
-Besides being a solution to a digital problem, PWM also has advantages compared to analog potentiometer methods, such as torque maintenance and almost zero heat losses. This has been PWM in 5 minutes, hope this helps.
+And finally, analog inputs are used whenever you need to measure the real world, because it doesn't do 1s and 0s. An example of this would be potentiometers, where you need to read the position of a knob or joystick, measuring a room's temperature, and a little advanced use case would be in generating smooth audio signals without using PWM. Don't worry if anyone is giving you mixed signals, just do a Fourier analysis.😉
