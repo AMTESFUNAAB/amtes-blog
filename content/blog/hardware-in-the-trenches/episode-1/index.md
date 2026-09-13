@@ -5,7 +5,6 @@ authors:
   - "dannyuzo"
 draft: false
 summary: "I walked into Day 1 of my SIWES placement expecting an immediate adrenaline rush. Instead, I was handed a desk and a task: source component prices on AliExpress, while my laptop screen pulled a WhatsApp 'view once' on me..."
-tags: ["siwes", "mechatronics", "3dprinting"]
 header: true
 enableComments: true
 layout: centered

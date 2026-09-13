@@ -5,7 +5,6 @@ authors:
   - "dannyuzo"
 draft: false
 summary: "When we hear about climate change and CO2 emissions, we picture large factories, cars, ships... but did you know the code you write has a carbon footprint too? This episode is a major eye-opener into Green Computing."
-tags: ["green-computing", "sustainability", "mechatronics"]
 header: true
 enableComments: true
 layout: centered
